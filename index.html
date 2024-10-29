@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- واجهة التسجيل -->
+    <div id="loginScreen">
+        <h2>Enter your 1xbet ID</h2>
+        <input type="text" id="idInput" placeholder="Your 1xbet ID">
+        <h2>Password (Promo Code)</h2>
+        <input type="password" id="passwordInput" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+        <p id="loginMessage"></p>
+    </div>
+
+    <!-- واجهة البدء -->
+    <div id="startScreen" style="display:none;">
+        <div class="start-background"></div>
+        <button onclick="startGame()">Start</button>
+    </div>
+
+    <!-- واجهة الانتظار -->
+    <div id="waitingScreen" style="display:none;">
+        <div class="waiting-background">
+            <img src="https://i.postimg.cc/v8PYT2py/15-12-44-718-512.gif" alt="Loading..." class="waiting-gif">
+        </div>
+    </div>
+
+    <!-- واجهة الإيقاف -->
+    <div id="stopScreen" style="display:none;">
+        <div class="stop-background">
+            <h2>STOP</h2>
+            <button onclick="resetGame()">Finish</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

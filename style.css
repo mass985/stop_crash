@@ -1,0 +1,92 @@
+/* إعداد الألوان و الخطوط */
+body, h2, button {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* واجهة التسجيل */
+#loginScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C5CAB; /* لون مشابه لـ 1xbet */
+    color: white;
+    height: 100vh;
+    justify-content: center;
+}
+
+#loginScreen input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 300px;
+}
+
+#loginScreen button {
+    background-color: #0096FF;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* واجهة البدء */
+#startScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.start-background {
+    background-image: url('start-background.jpg'); /* خلفية جذابة */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#startScreen button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #0096FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* واجهة الانتظار */
+#waitingScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C5CAB;
+    height: 100vh;
+}
+
+.waiting-gif {
+    max-width: 200px;
+}
+
+/* واجهة الإيقاف */
+#stopScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    height: 100vh;
+}
+
+#stopScreen h2 {
+    font-size: 48px;
+}
